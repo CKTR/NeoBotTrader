@@ -37,6 +37,11 @@ class Game extends CI_Controller {
 		$this->stencil->paint('game_view', $data);
 	}
         
+        private function equity()
+        {
+            $players = $this->db->query();
+        }
+        
 
 }
 
