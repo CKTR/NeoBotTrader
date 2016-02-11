@@ -13,9 +13,9 @@
 					<li><?php echo anchor('http://github.com/scotch-io/stencil', 'Github'); ?></li>
 					<li><?php echo anchor('home/subpage', 'Subpage Example'); ?></li>
 					<li><?php echo anchor('http://scotch.io/about', 'Contact'); ?></li>
-                                        <li><?php echo anchor('home/playerstat', 'Game Stat'); ?></li>
-                                        <li><?php echo anchor('home/player', 'Player Stat'); ?></li>
-                                        <li><?php echo anchor('home/assemble', 'Assembly'); ?></li>
+                                        <li><?php echo anchor('game/playerstat', 'Game Stat'); ?></li>
+                                        <li><?php echo anchor('player/stats', 'Player Stat'); ?></li>
+                                        <li><?php echo anchor('assemble/pieces', 'Assembly'); ?></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
