@@ -7,7 +7,7 @@
 <?php echo $meta; ?>
 
 <!-- icons and icons and icons and icons and icons and a tile -->
-<?php echo windows_tile(array('name' => 'Stencil', 'image' => base_url().'/assets/img/icons/tile.png', 'color' => '#4eb4e5')); ?>
+<?php echo windows_tile(array('name' => 'Troll', 'image' => base_url().'/assets/img/icons/tile.png', 'color' => '#4eb4e5')); ?>
 <?php echo favicons(); ?>
 
 <!-- crayons and paint -->	

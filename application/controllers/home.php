@@ -46,6 +46,61 @@ class Home extends CI_Controller {
 		$data['subpage_text'] = 'A Subpage Example!';
 		$this->stencil->paint('example_view', $data);
 	}
+        
+       public function gamestat()
+	{
+		$this->stencil->title('Game Status');
+		$this->stencil->layout('subpage_layout');
+
+		//Slices are view snippets that can be reused over and over again.
+		//They can either be simple and basic or very robust and powerful.
+		//For full explanation of what they can do, please visit the docs.
+		$this->stencil->slice('sidebar');
+
+		$data['subpage_text'] = 'Welcome to the Game Status Page!';
+		$this->stencil->paint('game_view', $data);
+	}
+        
+        public function playerstat()
+	{
+		$this->stencil->layout('gamepage_layout');
+                
+                $playerlist = $this->access->players();
+		$data['player'] = $playerlist;
+                
+                $this->stencil->slice('playerlist',$data);
+		$this->stencil->paint('game_view', $data);
+	}
+        
+        public function player()
+	{
+		$this->stencil->title('Player Status');
+		$this->stencil->layout('subpage_layout');
+
+		//Slices are view snippets that can be reused over and over again.
+		//They can either be simple and basic or very robust and powerful.
+		//For full explanation of what they can do, please visit the docs.
+		$this->stencil->slice('sidebar');
+
+		$data['subpage_text'] = 'A Subpage Example!';
+		$this->stencil->paint('player_view', $data);
+	}
+        
+        public function assemble()
+	{
+		$this->stencil->title('Assemble');
+		$this->stencil->layout('subpage_layout');
+
+		//Slices are view snippets that can be reused over and over again.
+		//They can either be simple and basic or very robust and powerful.
+		//For full explanation of what they can do, please visit the docs.
+		$this->stencil->slice('sidebar');
+
+		$data['subpage_text'] = 'A Subpage Example!';
+		$this->stencil->paint('assemble_view', $data);
+	}
+        
+
 }
 
 /* End of file home.php */

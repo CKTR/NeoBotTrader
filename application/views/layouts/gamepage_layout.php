@@ -15,11 +15,11 @@
 
 	<div class="container" style="margin-top: 100px;">
 		<section class="row">
-			<div class="span7">
+			<div class="span8">
 				<?php echo $content; ?>
 			</div>
-			<div class="span5">
-				<?php echo $sidebar; ?>
+			<div class="span4">
+				<?php echo $playerlist; ?>
 			</div>
 		</section>
 	</div>
