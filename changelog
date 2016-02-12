@@ -1,1 +1,15 @@
+- changes by Lin on 11/2/16 10:20AM
+added classes game, player and assemble
+changed binding to pages from header
+organized functions
+
+- changes by Lin on 11/2/16 1:50AM
+abandoned old template as it was too hard to work with and lots of content are unknown
+using a new template, added layout for gamepage, added views for assemble, game, and player, 
+added player stats for game page as slice(sidebar)
+also added several controller functions for each of the pages
+config is also altered with database added and autoload tweaked to match changes
+ready for other members to work on as a stepping stone
+some bug have been fixed, but no comments have been made yet, this will take place later.
+
 This is the initial entry in this log, newest item on top. Added some new control files, configured db, with the changes before.
